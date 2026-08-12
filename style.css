@@ -368,5 +368,23 @@ html {
     .banner, .contact,.homeimage {
         height: fit-content;
     }
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 40px 5%;
+    }
+
+    .col1, .foothead {
+        text-align: center;
+    }
+
+    .col4 {
+        justify-content: center;
+    }
+
+    .footerlogo {
+        font-size: 40px;
+    }
 
 }
