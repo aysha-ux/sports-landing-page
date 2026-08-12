@@ -1,0 +1,261 @@
+<!-- What a good simple cafe page usually includes (structure to aim for):
+
+Navbar: logo + Home / Menu / About / Contact
+Hero: big warm photo (coffee pour, cozy interior) + tagline + "Order Now" or "View Menu" button
+About section: short story, warm tone, maybe a photo of the space
+Menu section: card grid — item name, short description, price
+Gallery/Instagram-style strip: small photo grid, adds visual richness cheaply
+Testimonials (optional): 2-3 short quotes
+Contact/Location: map embed or address + hours
+Footer: social icons, hours, copyright
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT1</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome cdn ln -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montenegrin+Gothic+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="image/furniture-logo-icon-vector-flat-design_586739-1085.avif">
+
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <a class="brand" href="">
+            <i class="fa-solid fa-ranking-star logo"></i>
+            <span class="brandName">SPORTS</span>
+        </a>
+
+        <!-- checkbox -->
+        <input id="check" type="checkbox">
+        <label for="check" class="icons">
+            <!-- menu icon -->
+            <i id="menuicon" class="fa-solid fa-bars"></i>
+            <!-- cancel icon -->
+            <i id="cancelicon" class="fa-solid fa-x"></i>
+        </label>
+
+        <ul class="navLinks">
+            <li class="links"><a class="link" href="#home">Home</a></li>
+            <li class="links"><a class="link" href="#sports"> Featured-sports</a></li>
+            <li class="links"><a class="link" href="#news">News</a></li>
+            <li class="links"><a class="link" href="#about">About Us</a></li>
+
+            <li class="links"><a class="link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="hero">
+
+        <!-- text content -->
+        <div class="herotext">
+            <h1 class="herotitle">TRAIN LIKE A CHAMPION</h1>
+            <p class="heropara">Your hub for sports, news, and the road to the victory.</p>
+            <button class="herobutton">EXPLORE NOW</button>
+        </div>
+
+        <!-- image content  -->
+        <div class="heroimage">
+            <img width="800px" class="homeimage" src="./images/Cricket Action Freeze.png" alt="no image">
+        </div>
+    </section>
+
+    <!-- products section(section.products + enter) -->
+    <section id="sports" class="products">
+        <!-- heading -->
+        <h2 class="producthead">FEATURED SPORTS</h2>
+
+        <!-- product container -->
+        <div class="productcontainer">
+            <!-- card1 -->
+            <div class="card">
+                <!-- image -->
+                <img class="cardimg"
+                    src="https://images.unsplash.com/photo-1774852109372-3b735169e761?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <!-- product name -->
+                <h3 class="productname">FOOTBALL</h3>
+                <!-- price -->
+                <p class="price">Where teamwork meets triumph</p>
+                <!-- button -->
+                <button class="herobutton">explore</button>
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+                <!-- image -->
+                <img class="cardimg"
+                    src="https://images.unsplash.com/photo-1589492342521-1cc18248fffc?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <!-- product name -->
+                <h3 class="productname">SPRINTER</h3>
+                <!-- price -->
+                <p class="price">Every second counts</p>
+                <!-- button -->
+                <button class="herobutton">explore</button>
+            </div>
+            <!-- card3 -->
+            <div class="card">
+                <!-- image -->
+                <img class="cardimg"
+                    src="https://plus.unsplash.com/premium_photo-1664303151449-9e8b07b9e754?q=80&w=806&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <!-- product name -->
+                <h3 class="productname">BASKETBALL</h3>
+                <!-- price -->
+                <p class="price">Rise above the rim</p>
+                <!-- button -->
+                <button class="herobutton">explore</button>
+            </div>
+        </div>
+        </section>
+<section id="news">
+        <!-- news -->
+        <div>
+            <h2 class="newshead">SPORTS NEWS</h2>
+            <div class="newscontainer">
+                <!-- card1 -->
+                <div class="newscard">
+                    <!-- image -->
+                    <img class="newsimg" src="./images/Cricket Showdown - Australian Batter vs Wicket-Keeper.png"
+                        alt="">
+                    <div class="newstopic">
+                        <!-- product name -->
+                        <h3 class="newsname">CRICKET</h3>
+                        <!-- price -->
+                        <p class="newspara">India Clinches Series Win in Thrilling Finish
+                        </p>
+                        <!-- button -->
+                        <button class="newsbutton">view more</button>
+                    </div>
+                </div>
+
+                <div class="newscard">
+                    <!-- image -->
+                    <img class="newsimg"
+                        src="https://d1hv7ee95zft1i.cloudfront.net/custom/blog-post-photo/gallery/59a5053e3a274.jpg"
+                        alt="">
+                    <div class="newstopic">
+                        <!-- product name -->
+                        <h3 class="newsname">CRICKET</h3>
+                        <!-- price -->
+                        <p class="newspara">India Clinches Series Win in Thrilling Finish
+                        </p>
+                        <!-- button -->
+                        <button class="newsbutton">view more</button>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="newscard">
+                    <!-- image -->
+                    <img class="newsimg" src="./images/The Decisive Strike.png" alt="">
+                    <div class="newstopic">
+                        <!-- product name -->
+                        <h3 class="newsname">FOOTBALL</h3>
+                        <!-- price -->
+                        <p class="newspara">Rising Star Signs Record Transfer Deal
+                        </p>
+                        <!-- button -->
+                        <button class="newsbutton">view more</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- banner -->
+    <section id="about" class="banner">
+        <h2 class="abouthead">About Us</h2>
+        <p class="aboutpara">We bring you the world of sports — from breaking news to the athletes and moments that
+            define greatness. Football, athletics, basketball, and beyond, all in one place for fans who never stop
+            watching the game.</p>
+        <button class="herobutton aboutbutton">Let's Talk</button>
+    </section>
+
+    <!-- footer -->
+    <section id="contact" class="contact">
+        <div>
+            <i class="fa-solid fa-ranking-star footerlogo"></i>
+        </div>
+        <div class="col1">
+            <h3> Olympic Channel
+            </h3>
+            <p>TV Channel
+            </p>
+            <p>Live Events
+            </p>
+            <p>Original Series
+            </p>
+
+        </div>
+        
+        <div class="col1">
+            <h3>  News
+            </h3>
+            <p>Latest Headlines 
+            </p>
+            <p>Football News 
+            </p>
+            <p>Olympics Update 
+            </p>
+
+        </div>
+         <div class="col1">
+            <h3>  Explore
+            </h3>
+            <p>Athletes 
+            </p>
+            <p>Sports 
+            </p>
+            <p>Games</p>
+           
+
+        </div>
+        <div class="foothead"> 
+            <h3>  Follow Us 
+            </h3>
+                     <div class="col4">
+
+           
+
+            <a class="iconlink" href="https://www.facebook.com/" target="_blank" style="color: rgb(29, 221, 24);"><i class="fa-brands fa-facebook"></i></a>
+             <a class="iconlink"href="https://www.instagram.com/"target="_blank" style="color: rgb(29, 221, 24);"><i class="fa-brands fa-instagram" ></i></a>
+             <a class="iconlink" href="https://x.com/" target="_blank" style="color: rgb(29, 221, 24);"><i class="fa-brands fa-x-twitter"></i></a>
+             
+           </div> 
+           
+
+        </div>
+    </section>
+
+    <!-- foot -->
+    <p class="footer"> &copy; designed by aysha rayya,all rights reserved</p>
+
+
+</body>
+
+</html>
