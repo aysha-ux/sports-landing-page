@@ -28,7 +28,6 @@ body {
     text-decoration: none;
     font-size: 20px;
     color: #FFFFFF;
-
 }
 
 .brandName {
@@ -39,8 +38,6 @@ body {
     display: flex;
     gap: 10px;
     list-style: none;
-
-
 }
 
 .link {
@@ -48,7 +45,6 @@ body {
     text-decoration: none;
     transition: 1s;
     color: #FFFFFF;
-
 }
 
 .link:hover {
